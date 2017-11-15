@@ -5,19 +5,34 @@ padding: 0;
 margin:0;
 outline: none;
 }
+body{
+	background-image:url(../img/bg.jpg);
+	background-position: top;
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+h1{
+	text-align: center;
+	font-weight: 900;
+	font-style: italic;
+	text-decoration: underline;
+}
 #clock {
-	margin-top: 50px;
-	height: 400px;
-	width: 400px;
+	margin: 3% 30% ;
+	height: 450px;
+	width: 450px;
 	border: 3px solid black;
 	border-radius: 50%;
 	position: relative;
+	background-image:url(../img/clock.jpg);
 	
 }
 
 #min-hand{
-	width: 3px;
+	width: 5px;
 	height: 40%;
+	border:.30em solid blue;
+	border-radius:2px;
 	background-color: blue;
 	transform-origin: 50% 80%;
 	position: absolute;
@@ -27,8 +42,10 @@ outline: none;
 
 }
 #hr-hand{
-	width: 5px;
-	height: 25%;
+	width: 8px;
+	height: 30%;
+	border:2px solid black;
+	border-radius:2px;
 	background-color: red;
 	transform-origin: 50% 80%;
 	position: absolute;
@@ -37,9 +54,11 @@ outline: none;
 	margin-left: -2px;
 }
 #sec-hand{
-	width: 1px;
+	width: 3px;
 	height: 50%;
-	background-color: black;
+	border:1px solid black;
+	border-radius:2px;
+	background-color: white;
 	transform-origin: 50% 80%;
 	position: absolute;
 	top:10%;
@@ -52,7 +71,9 @@ outline: none;
 	left: calc(50% - 0.5em);
 }
 .num div{
-	font-size: 20px;
+     font-style:italic;
+	font-weight: 800;
+	font-size: 24px;
 	width:1em;
 	line-height: 2em;
 	color: red;

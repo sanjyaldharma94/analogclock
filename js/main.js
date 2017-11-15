@@ -16,6 +16,6 @@ function updateClock(date){
 function updateTime(date){
 	var timeDiv = document.getElementById('time');
 	var time = "Time for Reference --- " + date.getHours()+ " : "+ date.getMinutes() + " : "+ date.getSeconds();
-timeDiv.innerHtml = time;
+timeDiv.innerHTML= time;
 
 }
